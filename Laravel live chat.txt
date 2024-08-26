@@ -1,0 +1,21 @@
+https://www.freecodecamp.org/news/laravel-reverb-realtime-chat-app/
+
+Setting up for Laravel Live chat
+1. create Laravel project
+2. install npm
+	-npm install && npm run build
+	- npm run dev
+3. Create an event to listen for a specific events
+	-php artisan make:event GotMessage
+4. create job or sending sms
+	-php artisan make:job SendMessage
+5. install Laravel Reverb 
+	-php artisan install:broadcasting
+6. add channel created on event on channel.php
+7. deal with frontend using React 
+8. run the project
+	-npm run build
+	-npm run dev
+	- php artisan queue:listen
+	- php artisan reverb:start
+	- php artisan serve
